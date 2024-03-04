@@ -37,7 +37,7 @@ def pin_detail(request, id, format=None):
     elif request.method == 'PUT':
         serializer = PinSerializer(pin, data=request.data)
         if serializer.is_valid():
-            serializer.save
+            serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
