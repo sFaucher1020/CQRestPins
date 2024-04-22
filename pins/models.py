@@ -1,4 +1,3 @@
-  GNU nano 6.2                                                              models.py                                                                        
 from django.db import models
 import datetime
 
